@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CodeDamn- Quiz App</title>
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <!--StartCard-->
+        <div class="startcard">
+            <div id="navbar">
+                <header id="leaderboard" onclick="viewScore()">View Leaderboard<i class="fas fa-hand-point-left fa-lg"></i></header>
+                <header id="time">Time: </header>
+            </div>
+            <div id="card">
+                <div id="wrapper">
+                    <div id="heading">Coding Quiz Challenge</div>
+                    <div id="para">Try to answer the following code-related questions time limit.<br>Keep in mind that incorrect answers will penalize your score/time by 10 seconds.</div>
+                    <button id="start" onclick="show()">Start Quiz</button>
+                </div>
+            </div>
+        </div>
+        <!--Question-->
+        <div class="question-card">
+            <div id="navbar">
+                <header id="leaderboard" onclick="viewScore()">View Leaderboard<i class="fas fa-hand-point-left fa-lg"></i></header>
+                <header id="time">Time: <span id='time-display'>00:50</span></header>
+            </div>
+            <div id="card">
+                <div id="wrapper">
+                    <div id="question-text">Question Text</div>
+                    <div id="answer-options">
+                        <div id="option_1" onclick="select(option_a)" class="answer">option</div>
+                        <div id="option_2" onclick="select(option_b)" class="answer">option</div>
+                        <div id="option_3" onclick="select(option_c)" class="answer">option</div>
+                        <div id="option_4" onclick="select(option_d)" class="answer">option</div>
+
+                    </div>
+                    <div id="message"></div>
+                    
+
+                </div>
+            </div>
+        </div>
+        
+        <!--all-done-->
+        <div class="all-done-card">
+            <div id="navbar">
+                <header id="leaderboard" onclick="viewScore()">View Leaderboard<i class="fas fa-hand-point-left fa-lg"></i></header>
+                <header id="time">Time: </header>
+            </div>
+            <div id="card_2">
+                <div id="wrapper_2">
+                    <div id="heading">All Done!</div>
+                    <form><div id="para">Your final score is:<span id="score">0</span> <br>Enter Initials: <input id="initials" type="text" name="'initials"><button id="submit" style="margin-left:10px" onclick="saveScore()">Submit</button></div></form>
+                </div>
+            </div>
+        </div>
+        <!--highscore-->
+        <div class="highScore">
+            <div id="card_2">
+                <div id="wrapper_2">
+                    <h1>Player Score</h1>
+                    <div id="result"></div>
+                    <button id="back" onclick="goback()">Go Back</button>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+
+        <script src="./assets/script.js"></script>
+    </body>
+</html>
