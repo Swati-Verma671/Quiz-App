@@ -5,4 +5,4 @@ This is the first challenge of the 100 days of code challenge which required us 
 This app was designed purely with Vanilla CSS, Javascript and Bootstrap.
 
 ## Site Hosted:
-[Here](https://swati-verma671.github.io/Quiz-App/)
+[Here](https://quizdread.herokuapp.com/)
